@@ -17,10 +17,10 @@ class femboyYTs(Cog):
     """
     Get a random video from a Youtube Channel
     """
-    def __init__(self, *args, **kwargs) -> None:
-        super().__init__(*args, **kwargs)
-
+    def __init__(self, bot: Red) -> None:
+        super().__init__()
         self.__session = aiohttp.ClientSession()
+        self.bot = bot
     
     def cog_unload(self) -> None:
         if self.__session:
