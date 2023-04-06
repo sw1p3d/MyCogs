@@ -4,7 +4,7 @@ import discord
 import logging
 import urllib.request
 from random import choice
-import parser
+import parser as feedparser
 
 
 from redbot.core import commands
