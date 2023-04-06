@@ -1,11 +1,8 @@
 import aiohttp
 import asyncio
 import discord
-import io
 import logging
-import json
 import urllib.request
-import string
 from random import choice
 import parser
 
@@ -17,7 +14,7 @@ class femboyYTs(Cog):
     """
     Get a random video from a Youtube Channel
     """
-    def __init__(self):
+    def __init__(self, bot):
         super().__init__()
         self.__session = aiohttp.ClientSession()
     
