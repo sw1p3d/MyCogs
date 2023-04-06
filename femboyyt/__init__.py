@@ -1,5 +1,5 @@
-from .femboyyt import Femboyyt
+from .FemboyYoutubers import femboyYTs
 
 
 def setup(bot):
-    bot.add_cog(Femboyyt(bot))
+    bot.add_cog(femboyYTs(bot))
