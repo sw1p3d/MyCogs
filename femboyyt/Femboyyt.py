@@ -17,10 +17,9 @@ class femboyYTs(Cog):
     """
     Get a random video from a Youtube Channel
     """
-    def __init__(self, bot: Red) -> None:
+    def __init__(self) -> None:
         super().__init__()
         self.__session = aiohttp.ClientSession()
-        self.bot = bot
     
     def cog_unload(self) -> None:
         if self.__session:
