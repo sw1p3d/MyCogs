@@ -1,4 +1,4 @@
-from .FemboyYoutubers import femboyYTs
+from .Femboyyt import femboyYTs
 
 
 def setup(bot):
