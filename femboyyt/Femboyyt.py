@@ -17,11 +17,11 @@ class femboyYTs(Cog):
     """
     Get a random video from a Youtube Channel
     """
-    def __init__(self) -> None:
+    def __init__(self):
         super().__init__()
         self.__session = aiohttp.ClientSession()
     
-    def cog_unload(self) -> None:
+    def cog_unload(self):
         if self.__session:
             asyncio.get_event_loop().create_task(self.__session.close())
 
