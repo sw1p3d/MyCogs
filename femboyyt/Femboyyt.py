@@ -4,7 +4,7 @@ import discord
 import logging
 import urllib.request
 from random import choice
-import parser as feedparser
+import feedparser
 
 
 from redbot.core import commands
@@ -29,11 +29,12 @@ class femboyYTs(Cog):
     async def Linechu(self, ctx: commands.Context) -> None:
         """Gets a random Linechu video"""
 
-        count = 50
-        API_KEY = 'AIzaSyCkMbehTBfe-2yQ2mGzFvQq21zG1yra5vI'
+        # count = 50
+        # API_KEY = 'AIzaSyCkMbehTBfe-2yQ2mGzFvQq21zG1yra5vI'
 
-        urlData = "https://www.googleapis.com/youtube/v3/search?key={}&maxResults={}&part=snippet&type=video&q=Linechu"
+        # urlData = "https://www.googleapis.com/youtube/v3/search?key={}&maxResults={}&part=snippet&type=video&q=Linechu"
         # Get channel url
+
         channel_url = feedparser.parse("https://www.youtube.com/feeds/videos.xml?user=linechu")
 
         # Grab random video
